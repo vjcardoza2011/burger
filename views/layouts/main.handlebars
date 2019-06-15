@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eat-Da-Burger!</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="assets/css/burger_style.css">
+
+</head>
+
+<body>
+
+
+    <div class="container-fluid">
+        <center>
+            <div class="jumbotron jumbotron fluid">
+                <img src="assets/img/burger.png" alt="Burger Image">
+                <div class="container" id="top">
+                    <h1 class="display-4">Eat Da Burger!</h1>
+                    <p class="lead">Choose your favorite burger from the list and "Devour It!" <br>
+                        Is your favorite burger not on the list? Add your favorite burger to the list by
+                        using the submit form below. <br>
+                        The list on the right keeps track of the burgers you've devoured. YUM!</p>
+                </div>
+            </div>
+        </center>
+        <br>
+
+        <!-- Content from index.handlebars -->
+        {{{body}}}
+
+
+        <br><br>
+
+        <!-- Input New Burgers Form -->
+        <form action="burger/create" method="POST">
+
+            <!-- Text Area Input -->
+            <div class="row">
+                <!-- Empty Div to help center textarea -->
+                <div class="col-md-3"></div>
+
+                <!-- Burger Input Box -->
+                <div class="form-group col-md-6">
+                    <center><label for="new_burger" class="submitFont">Request your favorite burger!</label></center>
+                    <textarea class="form-control" type="text" columns="6" rows="2" id="new_burger required value="
+                        name=" burger_name"></textarea>
+                </div>
+
+                <div class="col-md-3"></div>
+            </div>
+
+            <!-- Submit Button -->
+            <center>
+                <button id="submit-button" type="submit" class="btn btn-danger">Add my burger!</button>
+            </center>
+        </form>
+        <br>
+    </div>
+</body>
+
+</html>

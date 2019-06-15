@@ -1,0 +1,31 @@
+body {
+    background-image: url("http://neirstavern.com/wp-content/uploads/2013/09/tan-gradient-background.png");
+  }
+  
+  h1{
+      color: yellow;
+  
+  }
+  #top {
+      background: rgb(92, 52, 52);
+  }
+  
+  .jumbotron{
+      padding-top: 1%;
+      background-color:transparent !important;
+  }
+  
+  img {
+  margin-top: 5%;
+    width: 25%;
+    height: 25%
+  }
+  
+  .submitFont {
+      color: red;
+      font-weight: bold;
+  }
+
+  .lead {
+      color: red;
+  }
