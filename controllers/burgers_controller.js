@@ -2,6 +2,9 @@ var express = require('express');
 var Router = express.Router();
 var burger = require('../models/burger.js');
 
+// Exporting routes
+module.exports = Router;
+
 
 //ROUTES
 
@@ -28,5 +31,3 @@ Router.post('/burger/eat/:id', function (req, res) {
     });
 });
 
-// Exporting routes
-module.exports = Router;
