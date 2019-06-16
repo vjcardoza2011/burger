@@ -8,11 +8,11 @@ module.exports = Router;
 
 //ROUTES
 
-Router.get('/', function (req, res) {
-    res.redirect('/index');
-});
+// Router.get('/', function (req, res) {
+//     res.redirect('/index');
+// });
 
-Router.get('/index', function (req, res) {
+Router.get('/', function (req, res) {
     burger.selectAll(function (data) {
         var hbsObject = { burgers: data };
         res.render('index', hbsObject);
