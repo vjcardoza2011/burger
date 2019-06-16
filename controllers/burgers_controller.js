@@ -11,8 +11,8 @@ Router.get('/', function (req, res) {
 
 Router.get('/index', function (req, res) {
     burger.selectAll(function (data) {
-        var hbObject = { burgers: data };
-        res.render('index', hbObject);
+        var hbsObject = { burgers: data };
+        res.render('index', hbsObject);
     });
 });
 
