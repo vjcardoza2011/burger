@@ -21,13 +21,13 @@ Router.get('/', function (req, res) {
 
 Router.post('/burger/create', function (req, res) {
     burger.insertOne(req.body.burger_name, function () {
-        res.redirect('/index');
+        res.redirect('/');
     });
 });
 
 Router.post('/burger/eat/:id', function (req, res) {
     burger.updateOne(req.params.id, function () {
-        res.redirect('/index');
+        res.redirect('/');
     });
 });
 
