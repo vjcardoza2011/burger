@@ -15,7 +15,7 @@
 ### Instructions:
 
 Click on the below heroku link:
-[https://mysterious-refuge-79948.herokuapp.com/] https://mysterious-refuge-79948.herokuapp.com/
+* https://mysterious-refuge-79948.herokuapp.com/
 
 ### OR
 
