@@ -13,6 +13,12 @@
 * This app will also store every burger in a MySql database, whether devoured or not.
 -------------
 ### Instructions:
+
+Click on the below heroku link:
+* [https://mysterious-refuge-79948.herokuapp.com/]https://mysterious-refuge-79948.herokuapp.com/
+
+### OR
+
 Step 1 - Clone my repo using the command line below
 ```
 git clone https://github.com/vjcardoza2011/burger.git
